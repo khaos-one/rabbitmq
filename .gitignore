@@ -35,3 +35,9 @@ msbuild.wrn
 
 # Rider
 .idea/
+
+out/
+
+bigquery.json
+*.secret.*
+*.nupkg

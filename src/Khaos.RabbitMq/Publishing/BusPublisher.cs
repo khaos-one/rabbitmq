@@ -12,7 +12,7 @@ namespace Khaos.RabbitMq.Publishing
 {
     public class BusPublisher<T> : IBusPublisher<T>
     {
-        public const string PredefinedChannelName = "publishing";
+        private const string PredefinedChannelName = "publishing";
 
         private readonly Lazy<IRabbitMqChannel> _channel;
         private readonly IMessageCodec _messageCodec;
